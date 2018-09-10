@@ -34,6 +34,7 @@ function addDevice(name, type, description) {
         type: type,
         description: description
     };
+    console.log(DeviceAction);
     socket.send(JSON.stringify(DeviceAction));
 }
 
